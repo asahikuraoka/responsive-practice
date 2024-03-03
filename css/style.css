@@ -25,8 +25,6 @@ body {
 
 @media (max-width: 959px){
   .box2{
-    width: 200px;
-    height: 200px;
     background-color: blue;
   }
 }
@@ -79,23 +77,26 @@ body {
   float: left;
 }
 @media (max-width: 959px) {
-  .box5,
-  .box6 {
-    float: none;
+  .box5{
+    clear: left;
+  }
+
+  .box6{
+    clear: left;
   }
 }
 
-
-.Q5{
+.Q5 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
 }
 
 .box7{
   width: 300px;
   height: 300px;
   background-color: red;
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +106,6 @@ body {
   width: 300px;
   height: 300px;
   background-color: blue;
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,21 +115,30 @@ body {
   width: 300px;
   height: 300px;
   background-color: orange;
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media (max-width: 959px) {
+.p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)
+  translateX(-50%);
+}
+
+@media screen and (max-width: 959px) {
   .Q5 {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
   }
 }
 
 .Q6{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
 }
 
 .box10{
@@ -160,58 +169,43 @@ body {
 }
 
 @media (max-width: 959px) {
-  .Q6 {
-    flex-direction: row-reverse;
-  }
-
   .box10{
     order: 2;
   }
 
   .box11{
-    order: 1;
+    order: 3;
   }
 
   .box12{
-    order: 2;
+    order: 1;
   }
 }
 
 .Q7{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .box13{
   width: 300px;
   height: 300px;
   background-color:red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .box14{
   width: 300px;
   height: 300px;
   background-color:#00ff51;
-  align-items: center;
-  justify-content: center;
 }
 
 .box15{
   width: 300px;
   height: 300px;
   background-color:#0008ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 959px) {
-  .box15{
-    display: none; 
-  }
+  display: none;
 }
 
 @media (max-width: 959px) {
@@ -219,7 +213,7 @@ body {
     display: none; 
   }
 
-  .box14{
-    order: 2;
+  .box15{
+    display: block;
   }
 }
