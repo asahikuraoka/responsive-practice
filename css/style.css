@@ -76,13 +76,11 @@ body {
   background-color: blue;
   float: left;
 }
-@media (max-width: 959px) {
-  .box5{
-    clear: left;
-  }
 
-  .box6{
-    clear: left;
+@media (max-width: 959px) {
+  .box5,
+  .box6 {
+    float: none;
   }
 }
 
@@ -148,6 +146,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: 1;
 }
 
 .box11{
@@ -157,6 +156,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: 2;
 }
 
 .box12{
@@ -166,6 +166,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: 3;
 }
 
 @media (max-width: 959px) {
