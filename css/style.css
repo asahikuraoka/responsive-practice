@@ -63,6 +63,13 @@ body {
   }
 }
 
+
+.Q4::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .box5 {
   width: 300px;
   height: 300px;
